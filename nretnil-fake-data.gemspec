@@ -4,7 +4,7 @@ require 'nretnil/fake-data/version'
  
 Gem::Specification.new do |s|
   s.name        = "nretnil-fake-data"
-  s.version     = Nretnil::Password::VERSION
+  s.version     = Nretnil::FakeData::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Mark Lintern"]
   s.email       = ["lintern.mark@gmail.com"]
