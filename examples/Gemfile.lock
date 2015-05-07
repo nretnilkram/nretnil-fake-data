@@ -1,8 +1,8 @@
 GIT
-  remote: https://github.com/mlintern/nretnil-password
-  revision: bfe43219f8707a5bdbf972b0fa18bc4970f18f29
+  remote: https://github.com/mlintern/nretnil-fake-data
+  revision: 9855bd572740da98de82828a37d727bfd271b7f3
   specs:
-    nretnil-password (0.0.3)
+    nretnil-fake-data (0.0.1)
 
 GEM
   remote: https://rubygems.org/
@@ -12,4 +12,4 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  nretnil-password!
+  nretnil-fake-data!
