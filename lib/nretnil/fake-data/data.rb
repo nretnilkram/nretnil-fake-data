@@ -27,7 +27,7 @@ module Nretnil
       (0..count).each do |i|
         text += word + " "
       end
-      text
+      text.rstrip
     end
 
     def self.name(sex = nil)
