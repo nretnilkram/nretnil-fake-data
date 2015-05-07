@@ -29,10 +29,26 @@ puts "puts Nretnil::FakeData.name"
 puts "# => " + Nretnil::FakeData.name
 puts "\n"
 
+puts "puts Nretnil::FakeData.name('f')"
+puts "# => " + Nretnil::FakeData.name('f')
+puts "\n"
+
+puts "puts Nretnil::FakeData.name('m')"
+puts "# => " + Nretnil::FakeData.name('m')
+puts "\n"
+
 puts "puts Nretnil::FakeData.surname"
 puts "# => " + Nretnil::FakeData.surname
 puts "\n"
 
 puts "puts Nretnil::FakeData.fullname"
 puts "# => " + Nretnil::FakeData.fullname
+puts "\n"
+
+puts "puts Nretnil::FakeData.fullname('f')"
+puts "# => " + Nretnil::FakeData.fullname('f')
+puts "\n"
+
+puts "puts Nretnil::FakeData.fullname('m')"
+puts "# => " + Nretnil::FakeData.fullname('m')
 puts "\n"

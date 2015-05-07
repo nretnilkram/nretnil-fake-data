@@ -1,34 +1,49 @@
-<h2>Version: 0.0.3</h2>
+<h2>Version: 0.0.1</h2>
+
+<p>This gem will help you create fake data that can be used in a variety of different applicaitons.  There is a name, number and word generator.  
+All words and names are randomly chosen from large lists.</p>
 
 <h1>Usage:</h1>
 
 ```ruby
 
 puts Nretnil::FakeData.number
-# => 428869
+# => 667098
 
 puts Nretnil::FakeData.number(8)
-# => 45891316
+# => 47068160
 
 puts Nretnil::FakeData.number(20)
-# => 37762233205209489773
+# => 41568643865394900096
 
 puts Nretnil::FakeData.word
-# => urna
+# => solve
 
 puts Nretnil::FakeData.words(10)
-# => non erat felis dui auctor urna dolor vitae vestibulum ut vestibulum
+# => to store comparison numerous free width pressure loan ahead this stroke
 
 puts Nretnil::FakeData.words(100)
-# => sit quis hendrerit fusce vivamus in aliquam eu donec ut ullamcorper dui vitae gravida purus consequat et enim dis ut sed nec pede cras blandit feugiat vitae sodales consequat egestas felis quis pretium in augue senectus iaculis accumsan id luctus id nonummy ipsum ante nec habitant lacinia praesent nulla pulvinar consequat fusce risus rutrum senectus sagittis porttitor tincidunt nunc elit phasellus lorem velit mattis lacinia a nec ipsum fermentum congue erat nunc metus enim orci velit quis congue tempor ullamcorper nec adipiscing eros diam erat tempus rutrum elementum congue mauris nunc morbi quis sem auctor at metus sapien fringilla tellus quis
+# => classification gallon opportunity sincere gun battle store altogether these machinery network surface pleasure passage earnest sour silence hinder therefore shirt polish literary balance down adventure former lean paw worm ancient explode multiplication start true once purpose straight then surface why present loyalty state frequency origin nest further dull forward prison appoint skill slow main upset appoint deceive tire of yes tonight slide fellowship climb objection thorn wake bury cut art ladder bill understand pale sample restaurant stiffen per push tree gallon nut fix generous obedient wish condition drink animal notice sometimes fresh belong friendship weave gas witness program stove adopt mark
 
 puts Nretnil::FakeData.name
-# => nullam
+# => Mathew
+
+puts Nretnil::FakeData.name('f')
+# => Christie
+
+puts Nretnil::FakeData.name('m')
+# => Augustine
 
 puts Nretnil::FakeData.surname
-# => placerat
+# => Elkins
 
 puts Nretnil::FakeData.fullname
-# => orci tincidunt
+# => Kerry Quick
+
+puts Nretnil::FakeData.fullname('f')
+# => Darleen Leach
+
+puts Nretnil::FakeData.fullname('m')
+# => Nelson Moore
 
 ```
