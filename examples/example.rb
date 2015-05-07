@@ -1,0 +1,38 @@
+require 'rubygems'
+require 'nretnil-fake-data'
+
+puts "puts Nretnil::FakeData.number"
+puts "# => " + Nretnil::FakeData.number.to_s
+puts "\n"
+
+puts "puts Nretnil::FakeData.number(8)"
+puts "# => " + Nretnil::FakeData.number(8).to_s
+puts "\n"
+
+puts "puts Nretnil::FakeData.number(20)"
+puts "# => " + Nretnil::FakeData.number(20).to_s
+puts "\n"
+
+puts "puts Nretnil::FakeData.word"
+puts "# => " + Nretnil::FakeData.word
+puts "\n"
+
+puts "puts Nretnil::FakeData.words(10)"
+puts "# => " + Nretnil::FakeData.words(10)
+puts "\n"
+
+puts "puts Nretnil::FakeData.words(100)"
+puts "# => " + Nretnil::FakeData.words(100)
+puts "\n"
+
+puts "puts Nretnil::FakeData.name"
+puts "# => " + Nretnil::FakeData.name
+puts "\n"
+
+puts "puts Nretnil::FakeData.surname"
+puts "# => " + Nretnil::FakeData.surname
+puts "\n"
+
+puts "puts Nretnil::FakeData.fullname"
+puts "# => " + Nretnil::FakeData.fullname
+puts "\n"
