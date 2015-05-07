@@ -1,6 +1,12 @@
 require 'rubygems'
 require 'nretnil-fake-data'
 
+puts "<h3>Numbers</h3>"
+puts "\n"
+
+puts "```ruby"
+puts "\n"
+
 puts "puts Nretnil::FakeData.number"
 puts "# => " + Nretnil::FakeData.number.to_s
 puts "\n"
@@ -13,6 +19,15 @@ puts "puts Nretnil::FakeData.number(20)"
 puts "# => " + Nretnil::FakeData.number(20).to_s
 puts "\n"
 
+puts "```"
+puts "\n"
+
+puts "<h3>Words</h3>"
+puts "\n"
+
+puts "```ruby"
+puts "\n"
+
 puts "puts Nretnil::FakeData.word"
 puts "# => " + Nretnil::FakeData.word
 puts "\n"
@@ -23,6 +38,15 @@ puts "\n"
 
 puts "puts Nretnil::FakeData.words(100)"
 puts "# => " + Nretnil::FakeData.words(100)
+puts "\n"
+
+puts "```"
+puts "\n"
+
+puts "<h3>Names</h3>"
+puts "\n"
+
+puts "```ruby"
 puts "\n"
 
 puts "puts Nretnil::FakeData.name"
@@ -51,4 +75,7 @@ puts "\n"
 
 puts "puts Nretnil::FakeData.fullname('m')"
 puts "# => " + Nretnil::FakeData.fullname('m')
+puts "\n"
+
+puts "```"
 puts "\n"

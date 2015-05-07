@@ -5,45 +5,59 @@ All words and names are randomly chosen from large lists.</p>
 
 <h1>Usage:</h1>
 
+<h3>Numbers</h3>
+
 ```ruby
 
 puts Nretnil::FakeData.number
-# => 667098
+# => 614858
 
 puts Nretnil::FakeData.number(8)
-# => 47068160
+# => 56524039
 
 puts Nretnil::FakeData.number(20)
-# => 41568643865394900096
+# => 34137485512473304053
+
+```
+
+<h3>Words</h3>
+
+```ruby
 
 puts Nretnil::FakeData.word
-# => solve
+# => descent
 
 puts Nretnil::FakeData.words(10)
-# => to store comparison numerous free width pressure loan ahead this stroke
+# => lose refresh pig elephant slip representative grave multiplication electric as perform
 
 puts Nretnil::FakeData.words(100)
-# => classification gallon opportunity sincere gun battle store altogether these machinery network surface pleasure passage earnest sour silence hinder therefore shirt polish literary balance down adventure former lean paw worm ancient explode multiplication start true once purpose straight then surface why present loyalty state frequency origin nest further dull forward prison appoint skill slow main upset appoint deceive tire of yes tonight slide fellowship climb objection thorn wake bury cut art ladder bill understand pale sample restaurant stiffen per push tree gallon nut fix generous obedient wish condition drink animal notice sometimes fresh belong friendship weave gas witness program stove adopt mark
+# => fellow ideal see when grease humble relief now stomach warn death merchant science friendship nowhere delay toward from paper regular progress easy poison vessel desk unless content allow glory autumn suspicion destructive soup collection journey night slippery pet descendant headdress egg leg speed mention shape cure christmas recommend representative immediate warmth grateful convenience button essence damp tower replace possession also companionship apply fear ring bless dine interference pupil inch cap stuff explain allow loud amount combine he passage eastern true anywhere blind broadcast strength deepen teach cap clean beyond tin collection intend captain press blind produce political dozen cream beam extreme
+
+```
+
+<h3>Names</h3>
+
+```ruby
 
 puts Nretnil::FakeData.name
-# => Mathew
+# => Brooks
 
 puts Nretnil::FakeData.name('f')
-# => Christie
+# => Anitra
 
 puts Nretnil::FakeData.name('m')
-# => Augustine
+# => Emery
 
 puts Nretnil::FakeData.surname
-# => Elkins
+# => Underwood
 
 puts Nretnil::FakeData.fullname
-# => Kerry Quick
+# => Rose Holley
 
 puts Nretnil::FakeData.fullname('f')
-# => Darleen Leach
+# => Trina Douglas
 
 puts Nretnil::FakeData.fullname('m')
-# => Nelson Moore
+# => Jeffery Garcia
 
 ```
