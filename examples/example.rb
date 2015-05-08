@@ -79,3 +79,16 @@ puts "\n"
 
 puts "```"
 puts "\n"
+
+puts "<h3>Date</h3>"
+puts "\n"
+
+puts "```ruby"
+puts "\n"
+
+puts "puts Nretnil::FakeData.date"
+puts "# => " + Nretnil::FakeData.date
+puts "\n"
+
+puts "```"
+puts "\n"

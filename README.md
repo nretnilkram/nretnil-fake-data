@@ -1,4 +1,4 @@
-<h2>Version: 0.0.1</h2>
+<h2>Version: 0.0.2</h2>
 
 <p>This gem will help you create fake data that can be used in a variety of different applicaitons.  There is a name, number and word generator.  
 All words and names are randomly chosen from large lists.</p>
@@ -61,3 +61,13 @@ puts Nretnil::FakeData.fullname('m')
 # => Jeffery Garcia
 
 ```
+
+<h3>Date</h3>
+
+```ruby
+
+puts Nretnil::FakeData.date
+# => 4-16-1942
+
+```
+

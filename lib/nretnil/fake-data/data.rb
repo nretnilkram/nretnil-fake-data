@@ -45,6 +45,19 @@ module Nretnil
       @@surnames[rand(@@surnames.count)].downcase.capitalize
     end
 
+    def self.date
+      month = (rand(12)+1).to_s
+      case month
+      when 2
+      	day = (rand(28)+1).to_s
+      when 1,3,5,7,8,10,12
+      	day = (rand(31)+1).to_s
+      else
+      	day = (rand(30)+1).to_s
+      end
+      month + "-" + day + "-" + ( rand(85) + 1930 ).to_s
+    end
+
     def self.fullname(sex = nil)
       name(sex) + " " + surname
     end
