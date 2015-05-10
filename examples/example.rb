@@ -92,3 +92,9 @@ puts "\n"
 
 puts "```"
 puts "\n"
+
+
+
+# (0..100).each do |i|
+# 	puts Nretnil::FakeData.date
+# end
