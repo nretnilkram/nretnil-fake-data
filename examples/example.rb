@@ -90,11 +90,15 @@ puts "puts Nretnil::FakeData.date"
 puts "# => " + Nretnil::FakeData.date
 puts "\n"
 
+puts "puts Nretnil::FakeData.date(2000)"
+puts "# => " + Nretnil::FakeData.date(2000)
+puts "\n"
+
 puts "```"
 puts "\n"
 
 
 
 # (0..100).each do |i|
-# 	puts Nretnil::FakeData.date
+# 	puts Nretnil::FakeData.date(2000)
 # end

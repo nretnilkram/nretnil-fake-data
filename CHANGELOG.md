@@ -1,6 +1,10 @@
+<h4>0.0.3</h4>
+
+* updated date generator to take a starting year, default is 1950
+
 <h4>0.0.2</h4>
 
-* date generator
+* date generator, which creates a date up to the current year
 
 <h4>0.0.1</h4>
 

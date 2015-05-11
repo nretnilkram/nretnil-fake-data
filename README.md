@@ -1,4 +1,4 @@
-<h2>Version: 0.0.2</h2>
+<h2>Version: 0.0.3</h2>
 
 <p>This gem will help you create fake data that can be used in a variety of different applicaitons.  There is a name, number and word generator.  
 All words and names are randomly chosen from large lists.</p>
@@ -10,13 +10,13 @@ All words and names are randomly chosen from large lists.</p>
 ```ruby
 
 puts Nretnil::FakeData.number
-# => 614858
+# => 359443
 
 puts Nretnil::FakeData.number(8)
-# => 56524039
+# => 92533085
 
 puts Nretnil::FakeData.number(20)
-# => 34137485512473304053
+# => 28267835974474964119
 
 ```
 
@@ -25,13 +25,13 @@ puts Nretnil::FakeData.number(20)
 ```ruby
 
 puts Nretnil::FakeData.word
-# => descent
+# => straight
 
 puts Nretnil::FakeData.words(10)
-# => lose refresh pig elephant slip representative grave multiplication electric as perform
+# => club article soul likely hasten care heat arm watch farm within
 
 puts Nretnil::FakeData.words(100)
-# => fellow ideal see when grease humble relief now stomach warn death merchant science friendship nowhere delay toward from paper regular progress easy poison vessel desk unless content allow glory autumn suspicion destructive soup collection journey night slippery pet descendant headdress egg leg speed mention shape cure christmas recommend representative immediate warmth grateful convenience button essence damp tower replace possession also companionship apply fear ring bless dine interference pupil inch cap stuff explain allow loud amount combine he passage eastern true anywhere blind broadcast strength deepen teach cap clean beyond tin collection intend captain press blind produce political dozen cream beam extreme
+# => ring part hold inquire mark fire dependent one both remember grass satisfaction fear tidy simple trap every fly quarrel stop she secretary high origin order date effective fortunate exception army repair reserve performance moreover mass omission scorn whether barber voyage a width understand back boundary reproduce proof redden steer politics intention race temperature shell send recommend contain peculiar wherever bicycle husband sheep continue price tin neglect qualification a lie hospital move deceit shirt moral yesterday prove absence cheese spell complete permission sing first ask walk thing weekend queen melt crown landlord wait holy escape passenger whip poison once scrape severe color
 
 ```
 
@@ -40,25 +40,25 @@ puts Nretnil::FakeData.words(100)
 ```ruby
 
 puts Nretnil::FakeData.name
-# => Brooks
+# => Jane
 
 puts Nretnil::FakeData.name('f')
-# => Anitra
+# => Marisa
 
 puts Nretnil::FakeData.name('m')
-# => Emery
+# => Jonathon
 
 puts Nretnil::FakeData.surname
-# => Underwood
+# => Mayfield
 
 puts Nretnil::FakeData.fullname
-# => Rose Holley
+# => Bobbie Velazquez
 
 puts Nretnil::FakeData.fullname('f')
-# => Trina Douglas
+# => Eva Waters
 
 puts Nretnil::FakeData.fullname('m')
-# => Jeffery Garcia
+# => Billy Barnes
 
 ```
 
@@ -67,7 +67,10 @@ puts Nretnil::FakeData.fullname('m')
 ```ruby
 
 puts Nretnil::FakeData.date
-# => 4-16-1942
+# => 11-16-1960
+
+puts Nretnil::FakeData.date(2000)
+# => 9-13-2006
 
 ```
 
