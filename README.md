@@ -1,4 +1,4 @@
-<h2>Version: 0.0.3</h2>
+<h2>Version: 0.1.0</h2>
 
 <p>This gem will help you create fake data that can be used in a variety of different applicaitons.  There is a name, number and word generator.  
 All words and names are randomly chosen from large lists.</p>

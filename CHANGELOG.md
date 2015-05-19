@@ -1,3 +1,7 @@
+<h4>0.1.0</h4>
+
+* Intial Release
+
 <h4>0.0.3</h4>
 
 * updated date generator to take a starting year, default is 1950
