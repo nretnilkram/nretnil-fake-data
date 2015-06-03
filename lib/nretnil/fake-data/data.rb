@@ -62,5 +62,9 @@ module Nretnil
       name(sex) + " " + surname
     end
 
+    def self.color
+      @@colors[rand(@@colors.count)]
+    end
+
   end
 end

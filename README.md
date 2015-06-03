@@ -1,4 +1,4 @@
-<h2>Version: 0.1.0</h2>
+<h2>Version: 0.1.1</h2>
 
 <p>This gem will help you create fake data that can be used in a variety of different applicaitons.  There is a name, number and word generator.  
 All words and names are randomly chosen from large lists.</p>
@@ -10,13 +10,13 @@ All words and names are randomly chosen from large lists.</p>
 ```ruby
 
 puts Nretnil::FakeData.number
-# => 359443
+# => 974307
 
 puts Nretnil::FakeData.number(8)
-# => 92533085
+# => 50574049
 
 puts Nretnil::FakeData.number(20)
-# => 28267835974474964119
+# => 57370711021904767534
 
 ```
 
@@ -25,13 +25,13 @@ puts Nretnil::FakeData.number(20)
 ```ruby
 
 puts Nretnil::FakeData.word
-# => straight
+# => gay
 
 puts Nretnil::FakeData.words(10)
-# => club article soul likely hasten care heat arm watch farm within
+# => thunder fur somebody valuable tidy cheat against sick grind agent everywhere
 
 puts Nretnil::FakeData.words(100)
-# => ring part hold inquire mark fire dependent one both remember grass satisfaction fear tidy simple trap every fly quarrel stop she secretary high origin order date effective fortunate exception army repair reserve performance moreover mass omission scorn whether barber voyage a width understand back boundary reproduce proof redden steer politics intention race temperature shell send recommend contain peculiar wherever bicycle husband sheep continue price tin neglect qualification a lie hospital move deceit shirt moral yesterday prove absence cheese spell complete permission sing first ask walk thing weekend queen melt crown landlord wait holy escape passenger whip poison once scrape severe color
+# => complication face story penny hardly cut relief uncle eager nail mountain dissatisfaction deal shock visitor cheer crime better happy ugly exercise safety hope ash tap honor brown impossible when body progress effort ship correction north whip cent beside south horizontal airplane headdress club satisfy accident ancient saw respect accident lunch congratulation wrong mild record population roll average completion find size here hammer agriculture omit prompt clean fright tower taste false dare prevention castle altogether drop conquest brother meal cattle possession devil life separate sing shirt descent due opportunity ache ink explode describe will sadden throw new allowance courage blade cry bury
 
 ```
 
@@ -40,25 +40,25 @@ puts Nretnil::FakeData.words(100)
 ```ruby
 
 puts Nretnil::FakeData.name
-# => Jane
+# => Sibyl
 
 puts Nretnil::FakeData.name('f')
-# => Marisa
+# => Angela
 
 puts Nretnil::FakeData.name('m')
-# => Jonathon
+# => Ike
 
 puts Nretnil::FakeData.surname
-# => Mayfield
+# => Vinson
 
 puts Nretnil::FakeData.fullname
-# => Bobbie Velazquez
+# => Augustus Potts
 
 puts Nretnil::FakeData.fullname('f')
-# => Eva Waters
+# => Cathi Pearce
 
 puts Nretnil::FakeData.fullname('m')
-# => Billy Barnes
+# => Kip Stevenson
 
 ```
 
@@ -67,10 +67,27 @@ puts Nretnil::FakeData.fullname('m')
 ```ruby
 
 puts Nretnil::FakeData.date
-# => 11-16-1960
+# => 4-12-1964
 
 puts Nretnil::FakeData.date(2000)
-# => 9-13-2006
+# => 5-8-2008
 
 ```
 
+<h3>Color</h3>
+
+```ruby
+
+puts Nretnil::FakeData.color
+# => {:name=>"Scarlet", :hex=>"#ff2400", :rgb=>[255, 36, 0]}
+
+puts Nretnil::FakeData.color[:name]
+# => Pale Copper
+
+puts Nretnil::FakeData.color[:hex]
+# => #d9603b
+
+puts Nretnil::FakeData.color[:rgb]
+# => [153, 0, 0]
+
+```

@@ -1,3 +1,7 @@
+<h4>0.1.1</h4>
+
+* Added color function
+
 <h4>0.1.0</h4>
 
 * Intial Release

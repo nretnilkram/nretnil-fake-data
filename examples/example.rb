@@ -97,8 +97,32 @@ puts "\n"
 puts "```"
 puts "\n"
 
+puts "<h3>Color</h3>"
+puts "\n"
+
+puts "```ruby"
+puts "\n"
+
+puts "puts Nretnil::FakeData.color"
+puts "# => " + Nretnil::FakeData.color.to_s
+puts "\n"
+
+puts "puts Nretnil::FakeData.color[:name]"
+puts "# => " + Nretnil::FakeData.color[:name].to_s
+puts "\n"
+
+puts "puts Nretnil::FakeData.color[:hex]"
+puts "# => " + Nretnil::FakeData.color[:hex].to_s
+puts "\n"
+
+puts "puts Nretnil::FakeData.color[:rgb]"
+puts "# => " + Nretnil::FakeData.color[:rgb].to_s
+puts "\n"
+
+puts "```"
+puts "\n"
 
 
 # (0..100).each do |i|
-# 	puts Nretnil::FakeData.date(2000)
+# 	puts Nretnil::FakeData.color
 # end
