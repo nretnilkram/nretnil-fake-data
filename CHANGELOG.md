@@ -1,3 +1,7 @@
+<h4>0.1.2</h4>
+
+* udpate color hex to all have length of 6
+
 <h4>0.1.1</h4>
 
 * Added color function
