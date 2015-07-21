@@ -1,3 +1,7 @@
+<h4>0.1.3</h4>
+
+* words(n) fix
+
 <h4>0.1.2</h4>
 
 * udpate color hex to all have length of 6

@@ -24,7 +24,7 @@ module Nretnil
 
     def self.words(count)
       text = ""
-      (0..count).each do |i|
+      (0...count).each do |i|
         text += word + " "
       end
       text.rstrip
