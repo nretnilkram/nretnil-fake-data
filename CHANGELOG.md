@@ -1,5 +1,9 @@
 <h4>0.1.3</h4>
 
+* added animal, animals(n), verb, verbs(n), noun, nouns(n)
+
+<h4>0.1.3</h4>
+
 * words(n) fix
 
 <h4>0.1.2</h4>

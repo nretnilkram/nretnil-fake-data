@@ -40,6 +40,30 @@ puts "puts Nretnil::FakeData.words(100)"
 puts "# => " + Nretnil::FakeData.words(100)
 puts "\n"
 
+puts "puts Nretnil::FakeData.animal"
+puts "# => " + Nretnil::FakeData.animal
+puts "\n"
+
+puts "puts Nretnil::FakeData.animals(10)"
+puts "# => " + Nretnil::FakeData.animals(10)
+puts "\n"
+
+puts "puts Nretnil::FakeData.verb"
+puts "# => " + Nretnil::FakeData.verb
+puts "\n"
+
+puts "puts Nretnil::FakeData.verbs(10)"
+puts "# => " + Nretnil::FakeData.verbs(10)
+puts "\n"
+
+puts "puts Nretnil::FakeData.noun"
+puts "# => " + Nretnil::FakeData.noun
+puts "\n"
+
+puts "puts Nretnil::FakeData.nouns(10)"
+puts "# => " + Nretnil::FakeData.nouns(10)
+puts "\n"
+
 puts "```"
 puts "\n"
 
