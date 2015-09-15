@@ -48,6 +48,14 @@ puts "puts Nretnil::FakeData.animals(10)"
 puts "# => " + Nretnil::FakeData.animals(10)
 puts "\n"
 
+puts "puts Nretnil::FakeData.adjective"
+puts "# => " + Nretnil::FakeData.adjective
+puts "\n"
+
+puts "puts Nretnil::FakeData.adjectives(10)"
+puts "# => " + Nretnil::FakeData.adjectives(10)
+puts "\n"
+
 puts "puts Nretnil::FakeData.verb"
 puts "# => " + Nretnil::FakeData.verb
 puts "\n"

@@ -24,6 +24,18 @@ module Nretnil
       text.rstrip
     end
 
+    def self.adjective
+      @@adjectives[rand(@@adjectives.count)].downcase
+    end
+
+    def self.adjectives(count = 1)
+      text = ""
+      (0...count).each do |i|
+        text += adjective + " "
+      end
+      text.rstrip
+    end
+
     def self.verb
       @@verbs[rand(@@verbs.count)].downcase
     end

@@ -1,4 +1,8 @@
-<h4>0.1.3</h4>
+<h4>0.1.5</h4>
+
+* added adjective, adjectives(n)
+
+<h4>0.1.4</h4>
 
 * added animal, animals(n), verb, verbs(n), noun, nouns(n)
 
