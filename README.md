@@ -10,13 +10,13 @@ All words and names are randomly chosen from large static lists.</p>
 ```ruby
 
 puts Nretnil::FakeData.number
-# => 675090
+# => 657850
 
 puts Nretnil::FakeData.number(8)
-# => 58176321
+# => 79231158
 
 puts Nretnil::FakeData.number(20)
-# => 49921264425203746970
+# => 26008038954889351181
 
 ```
 
@@ -25,31 +25,37 @@ puts Nretnil::FakeData.number(20)
 ```ruby
 
 puts Nretnil::FakeData.word
-# => modern
+# => home
 
 puts Nretnil::FakeData.words(10)
-# => none dictionary peace bright map complicate lend out excess list
+# => fit wealth secret get question potato peak box bear strange
 
 puts Nretnil::FakeData.words(100)
-# => cattle brass envelope fill sting bread obey musician wine game insurance either hollow nobody peculiar else table discuss pleasant summer can yield slow friend noise strong string factory open screw force inquiry lesson leg splendid old-fashioned refuse address width surround highway youth promise easy holiday faith disease sound delivery lamp invite sit journey fact crown propose rescue term worm fade restaurant male someone strike we interrupt relief loaf only bless customary cap curtain bicycle alike roast inquire person damage friendly dig invention pull mineral join jealous chair bright hook organ instrument unit underneath explain and bird ripe dozen daughter other
+# => father knife hurt mind complete harmony historical separate north his rabbits visible standard beat chess number wheel professional stress corner act plus golf obvious impact dry fact ready separate want adjust worried father machine vegetable accept collar please toad odd interesting lettuce being juice piece jar designer owe ideal store fuel crow activity file silver lack describe storm cow approve draft interesting uncle pet shine government lawyer perfect transition consider prevent screen key code initial afterthought kettle pocket cracker grow foot yarn illustrate quill straw view ring survey proud force advanced station improve beggar deer valuable record ship crow bed
 
 puts Nretnil::FakeData.animal
-# => bull
+# => hippopotamus
 
 puts Nretnil::FakeData.animals(10)
-# => baboon aoudad colt reptile cougar toad finch gopher koodoo mouse
+# => mule rhinoceros gemsbok lynx armadillo kangaroo gnu porpoise mynah bird lamb
+
+puts Nretnil::FakeData.adjective
+# => typical
+
+puts Nretnil::FakeData.adjectives(10)
+# => easy evening away visible significant regular vegetable routine visible distinct
 
 puts Nretnil::FakeData.verb
-# => cycle
+# => involved
 
 puts Nretnil::FakeData.verbs(10)
-# => priest market lock theme weekend fuel report plant harm branch
+# => belt been impress spell script feed field bus command pleasure
 
 puts Nretnil::FakeData.noun
-# => treatment
+# => experience
 
 puts Nretnil::FakeData.nouns(10)
-# => opinion sofa paste books laugh eyes year beetle force sort
+# => fear chance week art hearing test watch poison lunchroom quicksand
 
 ```
 
@@ -58,25 +64,25 @@ puts Nretnil::FakeData.nouns(10)
 ```ruby
 
 puts Nretnil::FakeData.name
-# => Sofia
+# => Carmela
 
 puts Nretnil::FakeData.name('f')
-# => Chana
+# => Inez
 
 puts Nretnil::FakeData.name('m')
-# => Albert
+# => Marty
 
 puts Nretnil::FakeData.surname
-# => Alvarado
+# => Dawson
 
 puts Nretnil::FakeData.fullname
-# => Joyce Sands
+# => Bailey Humphrey
 
 puts Nretnil::FakeData.fullname('f')
-# => Christiana Meyers
+# => Sharla Hare
 
 puts Nretnil::FakeData.fullname('m')
-# => Richie Schmidt
+# => Jacinto Curran
 
 ```
 
@@ -85,10 +91,10 @@ puts Nretnil::FakeData.fullname('m')
 ```ruby
 
 puts Nretnil::FakeData.date
-# => 6-9-2014
+# => 4-6-1984
 
 puts Nretnil::FakeData.date(2000)
-# => 10-5-2003
+# => 5-10-2001
 
 ```
 
@@ -97,15 +103,15 @@ puts Nretnil::FakeData.date(2000)
 ```ruby
 
 puts Nretnil::FakeData.color
-# => {:name=>"Medium Carmine", :hex=>"#af4035", :rgb=>[175, 64, 53]}
+# => {:name=>"Bright Turquoise", :hex=>"#08e8de", :rgb=>[8, 232, 222]}
 
 puts Nretnil::FakeData.color[:name]
-# => Red-Violet
+# => Quartz
 
 puts Nretnil::FakeData.color[:hex]
-# => #ffa343
+# => #843f5b
 
 puts Nretnil::FakeData.color[:rgb]
-# => [255, 182, 193]
+# => [99, 81, 71]
 
 ```
