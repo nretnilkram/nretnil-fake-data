@@ -151,6 +151,10 @@ puts "puts Nretnil::FakeData.color[:rgb]"
 puts "# => " + Nretnil::FakeData.color[:rgb].to_s
 puts "\n"
 
+puts "puts Nretnil::FakeData.color(true)"
+puts "# => " + Nretnil::FakeData.color(true).to_s
+puts "\n"
+
 puts "```"
 puts "\n"
 

@@ -104,8 +104,12 @@ module Nretnil
       name(sex) + " " + surname
     end
 
-    def self.color
-      @@colors[rand(@@colors.count)]
+    def self.color(simple = false)
+      if simple
+        @@simple_colors[rand(@@simple_colors.count)]
+      else
+        @@colors[rand(@@colors.count)]
+      end
     end
 
   end

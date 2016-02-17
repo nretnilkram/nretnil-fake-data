@@ -1,3 +1,7 @@
+<h4>0.1.6</h4>
+
+* added a simple boolean parameter to color method to limit color selection, defaults to false
+
 <h4>0.1.5</h4>
 
 * added adjective, adjectives(n)

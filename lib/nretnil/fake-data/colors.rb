@@ -864,7 +864,26 @@ module Nretnil
       { :name => "Yellow", :hex => "#ffef00", :rgb => [255, 239, 0] },
       { :name => "Yellow", :hex => "#fefe33", :rgb => [254, 254, 51] },
       { :name => "Zaffre", :hex => "#0014a8", :rgb => [0, 20, 168] },
-      { :name => "Zinnwaldite Brown", :hex => "#2c1608", :rgb => [44, 22, 8] },
+      { :name => "Zinnwaldite Brown", :hex => "#2c1608", :rgb => [44, 22, 8] }
+    ]
+
+    @@simple_colors = [
+      { :name => "Black", :hex => "#000000", :rgb => [0, 0, 0] },
+      { :name => "Blue", :hex => "#0000ff", :rgb => [0, 0, 255] },
+      { :name => "Brown", :hex => "#964b00", :rgb => [150, 75, 0] },
+      { :name => "Gold", :hex => "#d4af37", :rgb => [212, 175, 55] },
+      { :name => "Gray", :hex => "#808080", :rgb => [128, 128, 128] },
+      { :name => "Green", :hex => "#00ff00", :rgb => [0, 255, 0] },
+      { :name => "Indigo", :hex => "#6f00ff", :rgb => [111, 0, 255] },
+      { :name => "Maroon", :hex => "#c32148", :rgb => [195, 33, 72] },
+      { :name => "Orange", :hex => "#ff7f00", :rgb => [255, 127, 0] },
+      { :name => "Pink", :hex => "#ffc0cb", :rgb => [255, 192, 203] },
+      { :name => "Purple", :hex => "#800080", :rgb => [128, 0, 128] },
+      { :name => "Red", :hex => "#ff0000", :rgb => [255, 0, 0] },
+      { :name => "Tan", :hex => "#d2b48c", :rgb => [210, 180, 140] },
+      { :name => "Violet", :hex => "#8f00ff", :rgb => [143, 0, 255] },
+      { :name => "White", :hex => "#ffffff", :rgb => [255, 255, 255] },
+      { :name => "Yellow", :hex => "#ffff00", :rgb => [255, 255, 0] }
     ]
   end
 end
