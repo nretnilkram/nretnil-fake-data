@@ -1,5 +1,4 @@
 require 'rubygems'
-require 'httparty'
 
 module Nretnil
   module FakeData
