@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Mark Lintern"]
   s.email       = ["lintern.mark@gmail.com"]
-  s.homepage    = "http://github.com/mlintern/nretnil-fake-data"
+  s.homepage    = "http://github.com/nretnilkram/nretnil-fake-data"
   s.date        = Time.now.strftime("%Y-%m-%d")
   s.summary     = "Fake Data Generator"
   s.description = "Fake data generator of different complexities."
