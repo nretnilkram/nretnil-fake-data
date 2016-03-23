@@ -85,12 +85,12 @@ puts "puts Nretnil::FakeData.name"
 puts "# => " + Nretnil::FakeData.name
 puts "\n"
 
-puts "puts Nretnil::FakeData.name('f')"
-puts "# => " + Nretnil::FakeData.name('f')
+puts "puts Nretnil::FakeData.name(sex='f')"
+puts "# => " + Nretnil::FakeData.name(sex='f')
 puts "\n"
 
-puts "puts Nretnil::FakeData.name('m')"
-puts "# => " + Nretnil::FakeData.name('m')
+puts "puts Nretnil::FakeData.name(sex='m')"
+puts "# => " + Nretnil::FakeData.name(sex='m')
 puts "\n"
 
 puts "puts Nretnil::FakeData.surname"
@@ -101,12 +101,12 @@ puts "puts Nretnil::FakeData.fullname"
 puts "# => " + Nretnil::FakeData.fullname
 puts "\n"
 
-puts "puts Nretnil::FakeData.fullname('f')"
-puts "# => " + Nretnil::FakeData.fullname('f')
+puts "puts Nretnil::FakeData.fullname(sex='f')"
+puts "# => " + Nretnil::FakeData.fullname(sex='f')
 puts "\n"
 
-puts "puts Nretnil::FakeData.fullname('m')"
-puts "# => " + Nretnil::FakeData.fullname('m')
+puts "puts Nretnil::FakeData.fullname(sex='m')"
+puts "# => " + Nretnil::FakeData.fullname(sex='m')
 puts "\n"
 
 puts "```"
@@ -122,8 +122,12 @@ puts "puts Nretnil::FakeData.date"
 puts "# => " + Nretnil::FakeData.date
 puts "\n"
 
-puts "puts Nretnil::FakeData.date(2000)"
-puts "# => " + Nretnil::FakeData.date(2000)
+puts "puts Nretnil::FakeData.date(start_date=2000)"
+puts "# => " + Nretnil::FakeData.date(start_date=2000)
+puts "\n"
+
+puts "puts Nretnil::FakeData.date(start_date=1980,end_date=1995)"
+puts "# => " + Nretnil::FakeData.date(start_date=1980,end_date=1995)
 puts "\n"
 
 puts "```"
@@ -151,14 +155,30 @@ puts "puts Nretnil::FakeData.color[:rgb]"
 puts "# => " + Nretnil::FakeData.color[:rgb].to_s
 puts "\n"
 
-puts "puts Nretnil::FakeData.color(true)"
-puts "# => " + Nretnil::FakeData.color(true).to_s
+puts "puts Nretnil::FakeData.color(simple=true)"
+puts "# => " + Nretnil::FakeData.color(simple=true).to_s
 puts "\n"
 
 puts "```"
 puts "\n"
 
+puts "<h3>Instantiated</h3>"
+puts "\n"
 
-# (0..100).each do |i|
-# 	puts Nretnil::FakeData.color
-# end
+puts "```ruby"
+puts "\n"
+
+puts "fd = Nretnil::FakeData"
+fd = Nretnil::FakeData
+puts "\n"
+
+puts "puts fd.color(true)[:name]"
+puts "# => " + fd.color(true)[:name].to_s
+puts "\n"
+
+puts "puts fd.fullname"
+puts "# => " + fd.fullname
+puts "\n"
+
+puts "```"
+puts "\n"

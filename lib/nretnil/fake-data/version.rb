@@ -1,5 +1,5 @@
 module Nretnil
-  module FakeData
-    VERSION = '0.1.6'
+  class FakeData
+    VERSION = '0.1.7'
   end
 end

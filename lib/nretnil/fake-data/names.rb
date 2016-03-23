@@ -1,6 +1,6 @@
 module Nretnil
-  module FakeData
-    @@malenames = [
+  class FakeData
+    MALENAMES = [
       "james",
       "john",
       "robert",
@@ -1221,7 +1221,7 @@ module Nretnil
       "broderick",
       "alonso"
     ]
-    @@femalenames = [
+    FEMALENAMES = [
       "mary",
       "patricia",
       "linda",
@@ -3223,7 +3223,7 @@ module Nretnil
       "sheron",
       "shasta"
     ]
-    @@surnames = [
+    SURNAMES = [
       "smith",
       "johnson",
       "williams",
@@ -5225,6 +5225,6 @@ module Nretnil
       "sams",
       "reagan"
     ]
-    @@names = @@malenames + @@femalenames
+    NAMES = MALENAMES + FEMALENAMES
   end
 end

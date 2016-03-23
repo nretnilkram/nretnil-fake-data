@@ -1,6 +1,6 @@
 module Nretnil
-  module FakeData
-    @@colors = [
+  class FakeData
+    COLORS = [
       { :name => "Air Force Blue", :hex => "#5d8aa8", :rgb => [93, 138, 168] },
       { :name => "Air Force Blue", :hex => "#00308f", :rgb => [0, 48, 143] },
       { :name => "Air Superiority Blue", :hex => "#72a0c1", :rgb => [114, 160, 193] },
@@ -867,7 +867,7 @@ module Nretnil
       { :name => "Zinnwaldite Brown", :hex => "#2c1608", :rgb => [44, 22, 8] }
     ]
 
-    @@simple_colors = [
+    SIMPLE_COLORS = [
       { :name => "Black", :hex => "#000000", :rgb => [0, 0, 0] },
       { :name => "Blue", :hex => "#0000ff", :rgb => [0, 0, 255] },
       { :name => "Brown", :hex => "#964b00", :rgb => [150, 75, 0] },

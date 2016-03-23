@@ -1,4 +1,4 @@
-<h2>Version: 0.1.6</h2>
+<h2>Version: 0.1.7</h2>
 
 <p>This gem will help you create fake data that can be used in a variety of different applicaitons.  There is a name, number and word generator.  
 All words and names are randomly chosen from large static lists.</p>
@@ -10,13 +10,13 @@ All words and names are randomly chosen from large static lists.</p>
 ```ruby
 
 puts Nretnil::FakeData.number
-# => 959605
+# => 830708
 
 puts Nretnil::FakeData.number(8)
-# => 50790483
+# => 52843716
 
 puts Nretnil::FakeData.number(20)
-# => 92046104049073215573
+# => 77111547768511516054
 
 ```
 
@@ -25,37 +25,37 @@ puts Nretnil::FakeData.number(20)
 ```ruby
 
 puts Nretnil::FakeData.word
-# => joke
+# => glove
 
 puts Nretnil::FakeData.words(10)
-# => scheme calm drug basic mother quicksand competitive bat regret fog
+# => popcorn apparatus quarter stone being natural judge beds translate self
 
 puts Nretnil::FakeData.words(100)
-# => relieve help marry word uncle powerful return oil ant legal master tough quicksand sponge pickle use wall frequent physical jump beam sound native neck move number remain puppy spoon nut mailbox squirrel period paper kiss financial lunch trip muscle source mynah bird expansion board mirror block attend flowers arch curious wave expensive cold passenger compare children daughter battle face car land encouraging huge inevitable dare mistake cat soap search noise expect transition writing dramatic bug anxious unique drum veil lamp afraid sense machine task express vacation extra weigh iguana bone birth kid parking square band sand destroy rub these jacket lower
+# => follow figure hartebeest tree buffalo test first legs apparatus plane expect dolls pull adjust effect famous dog score breath selection selection express illustrate famous nerve sexual degree beginner grip camera budget music pollution know jewel bother beds beach lower angry room pack work district born sock pride colt study cap book mail busy which natural subject pollution rise typical empty newt wheel flower were exchange full buy polish distribution marten slice tax wolf insist wash platypus budgerigar brick drain cloud brief wilderness busy serve repair civil land roebuck snake women conference design middle otter male sport popcorn base justify skunk
 
 puts Nretnil::FakeData.animal
-# => basilisk
+# => civet
 
 puts Nretnil::FakeData.animals(10)
-# => cat hippopotamus crocodile wildcat okapi chameleon gila monster parakeet panther bull
+# => warthog ox raccoon camel kid anteater alpaca bull parakeet kinkajou
 
 puts Nretnil::FakeData.adjective
-# => his
+# => extra
 
 puts Nretnil::FakeData.adjectives(10)
-# => unique final previous educational beginning status pretty first ago flat
+# => still cool round enough vast similar tall action fair first
 
 puts Nretnil::FakeData.verb
-# => bed
+# => convince
 
 puts Nretnil::FakeData.verbs(10)
-# => end tend craft deliver string well cloud trip smart land
+# => ship prepare company flower exchange shine sing report prefer interest
 
 puts Nretnil::FakeData.noun
-# => twig
+# => oatmeal
 
 puts Nretnil::FakeData.nouns(10)
-# => stop maid play help snail advice snakes bread building land
+# => grip pancake clocks value pin degree flock friends crow low
 
 ```
 
@@ -64,25 +64,25 @@ puts Nretnil::FakeData.nouns(10)
 ```ruby
 
 puts Nretnil::FakeData.name
-# => Enedina
+# => Graig
 
-puts Nretnil::FakeData.name('f')
-# => Felipa
+puts Nretnil::FakeData.name(sex='f')
+# => Violeta
 
-puts Nretnil::FakeData.name('m')
-# => Edward
+puts Nretnil::FakeData.name(sex='m')
+# => Jarvis
 
 puts Nretnil::FakeData.surname
-# => Cline
+# => Mejia
 
 puts Nretnil::FakeData.fullname
-# => Shelley Christensen
+# => Lindy Horne
 
-puts Nretnil::FakeData.fullname('f')
-# => Corine Clifton
+puts Nretnil::FakeData.fullname(sex='f')
+# => Angeline Case
 
-puts Nretnil::FakeData.fullname('m')
-# => Rigoberto Farrell
+puts Nretnil::FakeData.fullname(sex='m')
+# => Richard Zavala
 
 ```
 
@@ -91,10 +91,13 @@ puts Nretnil::FakeData.fullname('m')
 ```ruby
 
 puts Nretnil::FakeData.date
-# => 1-23-1983
+# => 2-22-1986
 
-puts Nretnil::FakeData.date(2000)
-# => 6-24-2005
+puts Nretnil::FakeData.date(start_date=2000)
+# => 4-12-2000
+
+puts Nretnil::FakeData.date(start_date=1980,end_date=1995)
+# => 12-28-1989
 
 ```
 
@@ -103,18 +106,32 @@ puts Nretnil::FakeData.date(2000)
 ```ruby
 
 puts Nretnil::FakeData.color
-# => {:name=>"Baby Pink", :hex=>"#f4c2c2", :rgb=>[244, 194, 194]}
+# => {:name=>"Electric Indigo", :hex=>"#6f00ff", :rgb=>[111, 0, 255]}
 
 puts Nretnil::FakeData.color[:name]
-# => Deep Carrot Orange
+# => Lapis Lazuli
 
 puts Nretnil::FakeData.color[:hex]
-# => #702963
+# => #967bb6
 
 puts Nretnil::FakeData.color[:rgb]
-# => [0, 255, 239]
+# => [250, 214, 165]
 
-puts Nretnil::FakeData.color(true)
-# => {:name=>"White", :hex=>"#ffffff", :rgb=>[255, 255, 255]}
+puts Nretnil::FakeData.color(simple=true)
+# => {:name=>"Pink", :hex=>"#ffc0cb", :rgb=>[255, 192, 203]}
+
+```
+
+<h3>Instantiated</h3>
+
+```ruby
+
+fd = Nretnil::FakeData
+
+puts fd.color(true)[:name]
+# => Blue
+
+puts fd.fullname
+# => Kieth Baker
 
 ```

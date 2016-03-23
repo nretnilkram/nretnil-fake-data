@@ -1,6 +1,6 @@
 module Nretnil
-  module FakeData
-    @@verbs = [
+  class FakeData
+    VERBS = [
       "is",
       "has",
       "get",
@@ -1012,7 +1012,7 @@ module Nretnil
       "truck",
       "witness"
     ]
-    @@nouns = [
+    NOUNS = [
       "account",
       "achiever",
       "acoustics",
@@ -1994,7 +1994,7 @@ module Nretnil
       "zipper",
       "zoo"
     ]
-    @@animals = [
+    ANIMALS = [
       "aardvark",
       "addax",
       "alligator",
@@ -2179,7 +2179,7 @@ module Nretnil
       "zebra",
       "zebu"
     ]
-    @@adjectives = [
+    ADJECTIVES = [
       "different",
       "used",
       "important",
@@ -2708,6 +2708,6 @@ module Nretnil
       "prize",
       "resident"
     ]
-    @@words = @@verbs + @@nouns + @@adjectives + @@animals
+    WORDS = VERBS + NOUNS + ADJECTIVES + ANIMALS
   end
 end

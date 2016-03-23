@@ -1,3 +1,8 @@
+<h4>0.1.7</h4>
+
+* Updated @@ to Static Variables as they should have been
+* Updated FakeData to class from Module so it can be instansiated.
+
 <h4>0.1.6</h4>
 
 * added a simple boolean parameter to color method to limit color selection, defaults to false

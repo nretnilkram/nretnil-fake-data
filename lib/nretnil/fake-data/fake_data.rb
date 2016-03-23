@@ -1,7 +1,5 @@
-require 'rubygems'
-
 module Nretnil
-  module FakeData
+  class FakeData
 
     def self.number(digits = 6)
       n = ""
@@ -12,7 +10,7 @@ module Nretnil
     end
 
     def self.word
-      @@words[rand(@@words.count)].downcase
+      WORDS[rand(WORDS.count)].downcase
     end
 
     def self.words(count = 1)
@@ -24,7 +22,7 @@ module Nretnil
     end
 
     def self.adjective
-      @@adjectives[rand(@@adjectives.count)].downcase
+      ADJECTIVES[rand(ADJECTIVES.count)].downcase
     end
 
     def self.adjectives(count = 1)
@@ -36,7 +34,7 @@ module Nretnil
     end
 
     def self.verb
-      @@verbs[rand(@@verbs.count)].downcase
+      VERBS[rand(VERBS.count)].downcase
     end
 
     def self.verbs(count = 1)
@@ -48,7 +46,7 @@ module Nretnil
     end
 
     def self.noun
-      @@nouns[rand(@@nouns.count)].downcase
+      NOUNS[rand(NOUNS.count)].downcase
     end
 
     def self.nouns(count = 1)
@@ -60,7 +58,7 @@ module Nretnil
     end
 
     def self.animal
-      @@animals[rand(@@animals.count)].downcase
+      ANIMALS[rand(ANIMALS.count)].downcase
     end
 
     def self.animals(count = 1)
@@ -74,29 +72,33 @@ module Nretnil
     def self.name(sex = nil)
       case sex
       when "f", "female"
-        @@femalenames[rand(@@femalenames.count)].downcase.capitalize
+        FEMALENAMES[rand(FEMALENAMES.count)].downcase.capitalize
       when "m", "male"
-        @@malenames[rand(@@malenames.count)].downcase.capitalize
+        MALENAMES[rand(MALENAMES.count)].downcase.capitalize
       else
-        @@names[rand(@@names.count)].downcase.capitalize
+        NAMES[rand(NAMES.count)].downcase.capitalize
       end
     end
 
     def self.surname
-      @@surnames[rand(@@surnames.count)].downcase.capitalize
+      SURNAMES[rand(SURNAMES.count)].downcase.capitalize
     end
 
-    def self.date(start_year = 1950)
+    def self.date(start_year = 1950, end_year = nil)
       month = (rand(12)+1).to_s
       case month
       when 2
-      	day = (rand(28)+1).to_s
+        day = (rand(28)+1).to_s
       when 1,3,5,7,8,10,12
-      	day = (rand(31)+1).to_s
+        day = (rand(31)+1).to_s
       else
-      	day = (rand(30)+1).to_s
+        day = (rand(30)+1).to_s
       end
-      month + "-" + day + "-" + ( rand( Date.today.year - start_year ) + start_year ).to_s
+      if end_year.nil? || ( end_year < start_year )
+        month + "-" + day + "-" + ( rand( Date.today.year - start_year ) + start_year ).to_s
+      else
+        month + "-" + day + "-" + ( rand( end_year - start_year ) + start_year ).to_s
+      end
     end
 
     def self.fullname(sex = nil)
@@ -105,9 +107,9 @@ module Nretnil
 
     def self.color(simple = false)
       if simple
-        @@simple_colors[rand(@@simple_colors.count)]
+        SIMPLE_COLORS[rand(SIMPLE_COLORS.count)]
       else
-        @@colors[rand(@@colors.count)]
+        COLORS[rand(COLORS.count)]
       end
     end
 
