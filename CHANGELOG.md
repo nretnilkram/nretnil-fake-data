@@ -1,3 +1,7 @@
+<h4>0.1.8</h4>
+
+* rubocop update
+
 <h4>0.1.7</h4>
 
 * Updated @@ to Static Variables as they should have been

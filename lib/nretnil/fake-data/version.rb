@@ -1,5 +1,10 @@
+#!/bin/env ruby
+# encoding: UTF-8
+# frozen_string_literal: true
+
 module Nretnil
+  # FakeData
   class FakeData
-    VERSION = '0.1.7'
+    VERSION = '0.1.8'.freeze
   end
 end

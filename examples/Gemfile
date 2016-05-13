@@ -1,3 +1,5 @@
+# encoding: utf-8
+# frozen_string_literal: true
 source 'https://rubygems.org'
 
-gem 'nretnil-fake-data', :git => 'https://github.com/nretnilkram/nretnil-fake-data'
+gem 'nretnil-fake-data', git: 'https://github.com/nretnilkram/nretnil-fake-data'
