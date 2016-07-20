@@ -3,7 +3,7 @@
 # frozen_string_literal: true
 
 module Nretnil
-  # FakeData
+  # FakeData Class
   class FakeData
     VERSION = '0.1.8'.freeze
   end

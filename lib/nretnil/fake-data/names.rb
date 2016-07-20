@@ -3,7 +3,7 @@
 # frozen_string_literal: true
 
 module Nretnil
-  # FakeData
+  # FakeData Class
   class FakeData
     MALENAMES = %w(
       james

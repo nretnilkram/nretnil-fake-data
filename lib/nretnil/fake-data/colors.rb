@@ -3,7 +3,7 @@
 # frozen_string_literal: true
 
 module Nretnil
-  # FakeData
+  # FakeData Class
   class FakeData
     COLORS = [
       { name: 'Air Force Blue', hex: '#5d8aa8', rgb: [93, 138, 168] },
@@ -54,7 +54,6 @@ module Nretnil
       { name: 'Beau Blue', hex: '#bcd4e6', rgb: [188, 212, 230] },
       { name: 'Beaver', hex: '#9f8170', rgb: [159, 129, 112] },
       { name: 'Beige', hex: '#f5f5dc', rgb: [245, 245, 220] },
-      { name: "Big Dip O’Ruby", hex: '#9c2542', rgb: [156, 37, 66] },
       { name: 'Bisque', hex: '#ffe4c4', rgb: [255, 228, 196] },
       { name: 'Bistre', hex: '#3d2b1f', rgb: [61, 43, 31] },
       { name: 'Bittersweet', hex: '#fe6f5e', rgb: [254, 111, 94] },
