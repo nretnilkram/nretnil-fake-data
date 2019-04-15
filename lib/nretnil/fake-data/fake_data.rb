@@ -109,10 +109,11 @@ module Nretnil
     end
 
     def self.color(simple = false)
+      fd = FakeData.new
       if simple
-        SIMPLE_COLORS[rand(SIMPLE_COLORS.count)]
+        fd.simple_colors[rand(fd.simple_colors.count)]
       else
-        COLORS[rand(COLORS.count)]
+        fd.colors[rand(fd.colors.count)]
       end
     end
   end

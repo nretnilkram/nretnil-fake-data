@@ -840,5 +840,13 @@ module Nretnil
       { name: 'White', hex: '#ffffff', rgb: [255, 255, 255] },
       { name: 'Yellow', hex: '#ffff00', rgb: [255, 255, 0] }
     ].freeze
+
+    def colors
+      COLORS
+    end
+
+    def simple_colors
+      SIMPLE_COLORS
+    end
   end
 end
