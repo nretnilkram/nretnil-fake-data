@@ -1,11 +1,10 @@
 #!/bin/env ruby
-# encoding: UTF-8
 # frozen_string_literal: true
 
 module Nretnil
   # FakeData Class
   class FakeData
-    VERBS = %w(
+    VERBS = %w[
       is
       has
       get
@@ -1016,8 +1015,8 @@ module Nretnil
       tower
       truck
       witness
-    ).freeze
-    NOUNS = %w(
+    ].freeze
+    NOUNS = %w[
       account
       achiever
       acoustics
@@ -1998,7 +1997,7 @@ module Nretnil
       zinc
       zipper
       zoo
-    ).freeze
+    ].freeze
     ANIMALS = [
       'aardvark',
       'addax',
@@ -2184,7 +2183,7 @@ module Nretnil
       'zebra',
       'zebu'
     ].freeze
-    ADJECTIVES = %w(
+    ADJECTIVES = %w[
       different
       used
       important
@@ -2712,7 +2711,7 @@ module Nretnil
       pretend
       prize
       resident
-    ).freeze
+    ].freeze
     WORDS = VERBS + NOUNS + ADJECTIVES + ANIMALS
   end
 end

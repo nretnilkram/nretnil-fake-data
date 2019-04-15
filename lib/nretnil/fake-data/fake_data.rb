@@ -1,5 +1,4 @@
 #!/bin/env ruby
-# encoding: UTF-8
 # frozen_string_literal: true
 
 module Nretnil
@@ -17,7 +16,7 @@ module Nretnil
       WORDS[rand(WORDS.count)].downcase
     end
 
-    def self.words(count = 1)
+    def self.words(count = 2)
       text = ''
       (0...count).each do
         text += word + ' '
@@ -29,7 +28,7 @@ module Nretnil
       ADJECTIVES[rand(ADJECTIVES.count)].downcase
     end
 
-    def self.adjectives(count = 1)
+    def self.adjectives(count = 2)
       text = ''
       (0...count).each do
         text += adjective + ' '
@@ -41,7 +40,7 @@ module Nretnil
       VERBS[rand(VERBS.count)].downcase
     end
 
-    def self.verbs(count = 1)
+    def self.verbs(count = 2)
       text = ''
       (0...count).each do
         text += verb + ' '
@@ -53,7 +52,7 @@ module Nretnil
       NOUNS[rand(NOUNS.count)].downcase
     end
 
-    def self.nouns(count = 1)
+    def self.nouns(count = 2)
       text = ''
       (0...count).each do
         text += noun + ' '
@@ -65,7 +64,7 @@ module Nretnil
       ANIMALS[rand(ANIMALS.count)].downcase
     end
 
-    def self.animals(count = 1)
+    def self.animals(count = 2)
       text = ''
       (0...count).each do
         text += animal + ' '
@@ -88,25 +87,25 @@ module Nretnil
       SURNAMES[rand(SURNAMES.count)].downcase.capitalize
     end
 
+    def self.fullname(sex = nil)
+      name(sex) + ' ' + surname
+    end
+
     def self.date(start_year = 1950, end_year = nil)
-      month = (rand(12) + 1).to_s
+      month = rand(1..12).to_s
       day = case month
             when 2
-              (rand(28) + 1).to_s
+              rand(1..28).to_s
             when 1, 3, 5, 7, 8, 10, 12
-              (rand(31) + 1).to_s
+              rand(1..31).to_s
             else
-              (rand(30) + 1).to_s
+              rand(1..30).to_s
             end
       if end_year.nil? || (end_year < start_year)
         month + '-' + day + '-' + (rand(Date.today.year - start_year) + start_year).to_s
       else
         month + '-' + day + '-' + (rand(end_year - start_year) + start_year).to_s
       end
-    end
-
-    def self.fullname(sex = nil)
-      name(sex) + ' ' + surname
     end
 
     def self.color(simple = false)

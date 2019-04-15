@@ -1,11 +1,10 @@
 #!/bin/env ruby
-# encoding: UTF-8
 # frozen_string_literal: true
 
 module Nretnil
   # FakeData Class
   class FakeData
-    MALENAMES = %w(
+    MALENAMES = %w[
       james
       john
       robert
@@ -1225,8 +1224,8 @@ module Nretnil
       darell
       broderick
       alonso
-    ).freeze
-    FEMALENAMES = %w(
+    ].freeze
+    FEMALENAMES = %w[
       mary
       patricia
       linda
@@ -3227,8 +3226,8 @@ module Nretnil
       tarsha
       sheron
       shasta
-    ).freeze
-    SURNAMES = %w(
+    ].freeze
+    SURNAMES = %w[
       smith
       johnson
       williams
@@ -5229,7 +5228,7 @@ module Nretnil
       winslow
       sams
       reagan
-    ).freeze
+    ].freeze
     NAMES = MALENAMES + FEMALENAMES
   end
 end

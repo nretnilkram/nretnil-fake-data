@@ -1,8 +1,7 @@
 #!/bin/env ruby
-# encoding: UTF-8
 # frozen_string_literal: true
 
-$LOAD_PATH.push File.expand_path('../lib', __FILE__)
+$LOAD_PATH.push File.expand_path('lib', __dir__)
 
 require 'nretnil/fake-data/version'
 
@@ -26,7 +25,9 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = '>= 0.0.0'
 
-  s.files         = Dir.glob('{bin,lib}/**/*') + %w(LICENSE README.md CHANGELOG.md)
+  s.add_development_dependency 'rspec'
+
+  s.files         = Dir.glob('{bin,lib}/**/*') + %w[LICENSE README.md CHANGELOG.md]
   s.rdoc_options  = ['--charset=UTF-8']
   s.require_paths = ['lib']
 end

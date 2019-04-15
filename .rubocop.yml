@@ -8,15 +8,21 @@ AllCops:
 
 Metrics/LineLength:
   Max: 300
-
-Metrics/AbcSize:
-  Max: 25
+  Enabled: false
 
 Metrics/MethodLength:
   Max: 150
 
+Metrics/AbcSize:
+  Max: 30
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/PerceivedComplexity:
+  Max: 10
+
 Style/Encoding:
-  EnforcedStyle: always
   Enabled: true
 
 Style/FrozenStringLiteralComment:
